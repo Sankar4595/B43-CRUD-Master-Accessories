@@ -15,7 +15,7 @@ export default function UserOptions(){
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/" onClick={()=>history.push("/")}>Mobile Service</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#" >Contact as</Nav.Link>
+                    <Nav.Link href="/" onClick={()=>history.push("/")} >Contact as</Nav.Link>
                 </Nav>
             </Container>
         
