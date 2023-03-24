@@ -7,7 +7,7 @@ export default function Navbar_user(){
     return(
             <Navbar expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="/home">Master Accessories</Navbar.Brand>
+                    <Navbar.Brand href="/">Master Accessories</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                     <Form className="d-flex" style={{marginLeft: "3rem"}} >
