@@ -8,10 +8,10 @@ export default function UserOptions(){
             <Container>
                 <Nav className="nav-container" navbarScroll>
                     <Nav.Link href="/" onClick={()=>history.push("/")}>Home</Nav.Link>
-                    <Nav.Link href="/about" onClick={()=>history.push("/about")}>About</Nav.Link>
+                    <Nav.Link onClick={()=>history.push("/about")}>About</Nav.Link>
                     <NavDropdown title="Products" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="/screenprotector" onClick={()=>history.push("/screenprotector")} >Screen Protector</NavDropdown.Item>
-                        <NavDropdown.Item href="/backcase" onClick={()=>history.push("/backcase")}>Mobile BackCase</NavDropdown.Item>
+                        <NavDropdown.Item  onClick={()=>history.push("/screenprotector")} >Screen Protector</NavDropdown.Item>
+                        <NavDropdown.Item  onClick={()=>history.push("/backcase")}>Mobile BackCase</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item href="/" onClick={()=>history.push("/")}>Mobile Service</NavDropdown.Item>
                     </NavDropdown>
