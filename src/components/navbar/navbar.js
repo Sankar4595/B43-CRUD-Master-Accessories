@@ -1,6 +1,5 @@
-import { Divider } from "@mui/material";
 import React from "react";
-import { Button, Container, Form, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Form, Navbar } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
 export default function Navbar_user(){
@@ -8,7 +7,7 @@ export default function Navbar_user(){
     return(
             <Navbar expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="/">Master Accessories</Navbar.Brand>
+                    <Navbar.Brand href="/home">Master Accessories</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                     <Form className="d-flex" style={{marginLeft: "3rem"}} >
@@ -17,6 +16,7 @@ export default function Navbar_user(){
                     </Form>
                     </Navbar.Collapse>
                     <Form className="user-input">
+                        <Button variant="light" onClick={()=>history.push("/")} className="login-btn">Become a Seller</Button>
                         <Button variant="primary" onClick={()=>history.push("/login")} className="login-btn">Login</Button>
                         <Button variant="danger" onClick={()=>history.push("/signup")} className="login-btn">Signup</Button>
                     </Form>

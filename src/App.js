@@ -6,6 +6,7 @@ import BackCase from './components/backCase';
 import Signup from './components/Signup';
 import ScreenProtector from './components/screenprotector';
 import Login from './components/signin';
+import Home from './components/home';
 
 function App() {
  
@@ -13,8 +14,8 @@ function App() {
     <div className="App">
       <Switch>
 
-        <Route exact path="/">
-          <BackCase/>
+        <Route exact path="/home">
+          <Home/>
         </Route>
 
         <Route path="/login">
