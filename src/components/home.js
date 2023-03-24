@@ -1,8 +1,10 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import Base_UserApp from "../core/base";
 
 export default function Home(){
     return(
+    <Base_UserApp>
     <Carousel>
         <Carousel.Item>
             <img
@@ -42,5 +44,6 @@ export default function Home(){
             </Carousel.Caption>
         </Carousel.Item>
     </Carousel>
+    </Base_UserApp>
     )
 }
